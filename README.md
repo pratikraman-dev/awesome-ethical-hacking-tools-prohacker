@@ -58,6 +58,9 @@ A curated, comprehensive directory of awesome tools for ethical hacking, penetra
 
 > [!WARNING]
 > **Disclaimer:** This repository and the tools listed herein are intended solely for educational, research, and authorized security testing. Running these tools against networks, systems, or web applications without explicit written permission from the owner is strictly prohibited and illegal.
+> 
+> 🛡️ **Rules of Engagement:** Before utilizing these tools, make sure you read and comply with our **[Security & Ethical Hacking Guidelines](SECURITY_GUIDELINES.md)**.
+
 
 ---
 

@@ -48,6 +48,9 @@ Welcome to the ultimate curated collection of ethical hacking tutorials, referen
 
 > [!WARNING]
 > **Disclaimer:** This repository and the resources listed herein are intended solely for educational, research, and authorized testing purposes. Performing security assessments or scanning networks without prior explicit consent is illegal. Use these resources responsibly and ethically.
+> 
+> 🛡️ **Rules of Engagement:** Before utilizing these resources, make sure you read and comply with our **[Security & Ethical Hacking Guidelines](SECURITY_GUIDELINES.md)**.
+
 
 ---
 
