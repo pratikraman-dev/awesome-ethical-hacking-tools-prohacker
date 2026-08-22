@@ -211,11 +211,15 @@ Quick reference guides for commands and syntax during assessments.
 > [!TIP]
 > Keep these open on your second monitor during CTFs and exams!
 
+*   **[Local Nmap Scanning Cheat Sheet](cheatsheets/nmap-scanning.md)** - Our custom, copy-pasteable reference for target specification, port scans, OS/service detection, and output logging.
+*   **[Local Privilege Escalation Cheat Sheet](cheatsheets/privilege-escalation.md)** - Essential enumeration command lines and exploit pathways for Linux SUID/Sudo and Windows Service paths.
+*   **[Local Active Directory Hacking Cheat Sheet](cheatsheets/active-directory.md)** - Commands for domain query, PowerView syntax, Kerberoasting (Rubeus/Impacket), and lateral movement.
 *   **[PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)** - An enormous repository of payloads and bypasses for Web Application Security.
 *   **[GTFOBins](https://gtfobins.github.io/)** - A curated list of Unix binaries that can be exploited to bypass local security restrictions and escalate privileges.
 *   **[LOLBAS](https://lolbas-project.github.io/)** - (Living Off The Land Binaries and Scripts) The Windows equivalent of GTFOBins for privilege escalation and evasion.
 *   **[Nmap Cheat Sheet](https://sushant747.gitbooks.io/total-oscp-guide/content/nmap_cheat_sheet.html)** - Quick reference for scanning networks, OS detection, and NSE scripts.
 *   **[Active Directory Attack Cheat Sheet](https://github.com/Orange-Cyberdefense/arsenal)** - Commands and techniques for compromising Active Directory environments.
+
 
 ---
 
