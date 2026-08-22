@@ -45,6 +45,11 @@ A curated, comprehensive directory of awesome tools for ethical hacking, penetra
 > *   **[Nmap Scanning Cheat Sheet](cheatsheets/nmap-scanning.md)** — Host discovery, port scans, service version detection, and NSE scripting.
 > *   **[Privilege Escalation Cheat Sheet](cheatsheets/privilege-escalation.md)** — Linux SUID/Sudo and Windows Service/Registry privilege escalation commands.
 > *   **[Active Directory Hacking Cheat Sheet](cheatsheets/active-directory.md)** — Domain enumeration, Kerberos attacks (Rubeus/Impacket), and lateral movement.
+> 
+> 📖 **Quick Access Practical Guides:**
+> *   **[Android Traffic Interception Guide](guides/android-intercept-burp.md)** — Set up a proxy listener, install a system CA cert, and bypass SSL pinning with Frida.
+> *   **[Local Hacking Lab Setup Guide](guides/kali-homelab-setup.md)** — Configure host-isolated NAT networks in VirtualBox, Kali Linux, and target VMs.
+
 
 
 > [!WARNING]

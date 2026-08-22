@@ -40,6 +40,11 @@ Welcome to the ultimate curated collection of ethical hacking tutorials, referen
 
 > [!NOTE]
 > Looking for the curated tools directory organized by hacking methodology? Check out our: **[Awesome Ethical Hacking Tools](README.md)**!
+> 
+> 📖 **Quick Access Practical Guides:**
+> *   **[Android Traffic Interception Guide](guides/android-intercept-burp.md)** — Set up a proxy listener, install a system CA cert, and bypass SSL pinning with Frida.
+> *   **[Local Hacking Lab Setup Guide](guides/kali-homelab-setup.md)** — Configure host-isolated NAT networks in VirtualBox, Kali Linux, and target VMs.
+
 
 > [!WARNING]
 > **Disclaimer:** This repository and the resources listed herein are intended solely for educational, research, and authorized testing purposes. Performing security assessments or scanning networks without prior explicit consent is illegal. Use these resources responsibly and ethically.
