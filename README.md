@@ -53,6 +53,9 @@ A curated, comprehensive directory of awesome tools for ethical hacking, penetra
 > 📖 **Quick Access Practical Guides:**
 > *   **[Android Traffic Interception Guide](guides/android-intercept-burp.md)** — Set up a proxy listener, install a system CA cert, and bypass SSL pinning with Frida.
 > *   **[Local Hacking Lab Setup Guide](guides/kali-homelab-setup.md)** — Configure host-isolated NAT networks in VirtualBox, Kali Linux, and target VMs.
+> *   **[Kali Linux Mastery Guide](guides/kali-linux-mastery.md)** — Package manager configurations, metapackages, custom setups, and network troubleshooting.
+> *   **[Deep Learning & AI in Security Guide](guides/ai-cybersecurity-path.md)** — Neural network applications in defense, datasets, and auditing LLMs against prompt injection.
+
 
 
 
