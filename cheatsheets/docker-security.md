@@ -4,6 +4,25 @@ A comprehensive collection of command snippets, configuration auditing checks, a
 
 ---
 
+## Docker Socket Escape Vector
+
+```mermaid
+graph TD
+    Container["Target Container (Root Privilege inside Namespace)"]
+    Socket["Mount Vector: /var/run/docker.sock"]
+    Daemon["Host Docker Daemon Service"]
+    HostFS["Host Operating System Root File System (/)"]
+
+    Container -->|Communicates via| Socket
+    Socket -->|API commands to| Daemon
+    Daemon -->|Instructs host to create| NewContainer["New Malicious Container"]
+    NewContainer -->|Mounts host root filesystem to| MountPoint["/host (Full Host root Access)"]
+    MountPoint -->|Read / Write / Modify| HostFS
+```
+
+---
+
+
 ## 1. Container Security Enumeration
 
 Check your privileges inside a running container.

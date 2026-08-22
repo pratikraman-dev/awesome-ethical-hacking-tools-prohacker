@@ -7,6 +7,22 @@ A reference guide for command syntax and execution steps during Active Directory
 
 ---
 
+## Active Directory Attack Chain Overview
+
+```mermaid
+graph TD
+    A["Foothold (Low-Priv User Account)"] -->|BloodHound AD Graph Scan| B["Identify Path to Domain Admin"]
+    B -->|GetUserSPNs.py / Rubeus| C("Kerberoasting (Service Account Hashes)")
+    C -->|Hashcat Offline Hash Crack| D["Obtain Service Account Password"]
+    D -->|WinRM / WMI Pivoting| E["Local Admin Access on Member Server"]
+    E -->|Mimikatz sekurlsa :: logonpasswords| F["Extract LSASS Memory Credentials"]
+    F -->|DCSync Attack (lsadump :: dcsync)| G["Extract Domain krbtgt NTLM Hash"]
+    G -->|mimikatz kerberos :: golden| H["Golden Ticket (Full Domain Control)"]
+```
+
+---
+
+
 ## 1. Domain Enumeration (Windows Command Line)
 
 Basic commands to run when connected to a domain-joined machine.
