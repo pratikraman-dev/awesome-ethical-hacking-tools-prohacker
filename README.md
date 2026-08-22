@@ -1,17 +1,45 @@
 # Awesome Ethical Hacking Tools
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Awesome-Hacking%20Tools-brightgreen.svg" alt="Awesome Hacking Tools">
-  <img src="https://img.shields.io/badge/PRs-Welcome-blue.svg" alt="PRs Welcome">
-  <img src="https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg" alt="License Apache 2.0">
-  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg" alt="Platform Support">
-</p>
+<div align="center">
+  
+  [![Awesome Hacking Tools](https://img.shields.io/badge/Awesome-Hacking%20Tools-brightgreen.svg)](https://github.com/pratikraman-dev/awesome-ethical-hacking-tools-prohacker)
+  [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-blue.svg)](https://github.com/pratikraman-dev/awesome-ethical-hacking-tools-prohacker/blob/main/README.md#16-contribution-guidelines)
+  [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://github.com/pratikraman-dev/awesome-ethical-hacking-tools-prohacker/blob/main/LICENSE)
+  [![Platform Support](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg)](#15-quick-reference-tools-matrix)
+  
+</div>
 
-A curated, comprehensive directory of awesome tools for ethical hacking, penetration testing, and security auditing. The tools are organized by the phase of standard penetration testing methodology.
+---
+
+<div align="center">
+  <h2>📱 Sponsored Mobile App</h2>
+  <h3>Pro Hacker: Ethical Hacking</h3>
+  <p><b>Master Cybersecurity, Penetration Testing, and Hacking Foundations directly from your phone!</b></p>
+  
+  <a href="https://play.google.com/store/apps/details?id=com.gripxtech.prohacker&hl=en_IN" target="_blank">
+    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get Pro Hacker on Google Play" height="80px">
+  </a>
+  
+  <p align="center" style="max-width: 600px;">
+    🚀 Developed by <b>GripxTech</b>, <b>Pro Hacker</b> is the ultimate interactive learning companion. Learn Kali Linux, web application hacking, network scanning, and Python scripting through structured lessons, real-world case studies, and gamified quizzes.
+  </p>
+  
+  <table>
+    <tr>
+      <td>📚 <b>Structured Courses</b></td>
+      <td>🎮 <b>Interactive Quizzes</b></td>
+      <td>🛡️ <b>Real-world Scenarios</b></td>
+      <td>🐧 <b>Kali Linux Tutorials</b></td>
+    </tr>
+  </table>
+</div>
+
+---
+
+A curated, comprehensive directory of awesome tools for ethical hacking, penetration testing, and security auditing. The tools are organized by the phase of standard penetration testing methodology and specialty domains.
 
 > [!NOTE]
 > Looking for guided learning roadmaps, video courses, books, and wargames? Check out our curated list: **[Awesome Hacking Tutorials & Resources](tutorials-and-resources.md)**!
-
 
 > [!WARNING]
 > **Disclaimer:** This repository and the tools listed herein are intended solely for educational, research, and authorized security testing. Running these tools against networks, systems, or web applications without explicit written permission from the owner is strictly prohibited and illegal.
@@ -23,14 +51,21 @@ A curated, comprehensive directory of awesome tools for ethical hacking, penetra
 * [1. Information Gathering & Reconnaissance (OSINT)](#1-information-gathering--reconnaissance-osint)
 * [2. Scanning & Vulnerability Analysis](#2-scanning--vulnerability-analysis)
 * [3. Web Application Security](#3-web-application-security)
-* [4. Exploitation Frameworks](#4-exploitation-frameworks)
-* [5. Post-Exploitation & Privilege Escalation](#5-post-exploitation--privilege-escalation)
-* [6. Wireless Hacking](#6-wireless-hacking)
-* [7. Password Hacking & Cryptography](#7-password-hacking--cryptography)
-* [8. Reverse Engineering & Malware Analysis](#8-reverse-engineering--malware-analysis)
-* [9. Premium Hacking OS / Distributions](#9-premium-hacking-os--distributions)
-* [10. Quick-Reference Tools Matrix](#10-quick-reference-tools-matrix)
-* [11. Contribution Guidelines](#11-contribution-guidelines)
+* [4. Mobile Application Security](#4-mobile-application-security)
+* [5. Bug Bounty Hunting](#5-bug-bounty-hunting)
+* [6. Cloud & Container Security](#6-cloud--container-security)
+* [7. API Security](#7-api-security)
+* [8. Exploitation Frameworks](#8-exploitation-frameworks)
+* [9. Post-Exploitation & Privilege Escalation](#9-post-exploitation--privilege-escalation)
+* [10. Wireless Hacking](#10-wireless-hacking)
+* [11. Password Hacking & Cryptography](#11-password-hacking--cryptography)
+* [12. Social Engineering & Phishing](#12-social-engineering--phishing)
+* [13. Physical Security & Hardware Hacking](#13-physical-security--hardware-hacking)
+* [14. Reverse Engineering & Malware Analysis](#14-reverse-engineering--malware-analysis)
+* [15. Blue Teaming & Threat Hunting](#15-blue-teaming--threat-hunting)
+* [16. Premium Hacking OS / Distributions](#16-premium-hacking-os--distributions)
+* [17. Quick-Reference Tools Matrix](#17-quick-reference-tools-matrix)
+* [18. Contribution Guidelines](#18-contribution-guidelines)
 
 ---
 
@@ -77,7 +112,55 @@ graph LR
 
 ---
 
-## 4. Exploitation Frameworks
+## 4. Mobile Application Security
+
+Tools used to test, reverse engineer, and audit Android and iOS mobile applications for security weaknesses.
+
+*   **[Frida](https://frida.re/)** - A dynamic instrumentation toolkit that allows you to inject custom scripts into black-box application binaries (bypass SSL pinning, hook functions).
+*   **[MobSF (Mobile Security Framework)](https://github.com/MobSF/Mobile-Security-Framework-MobSF)** - An automated, all-in-one mobile application (Android/iOS/Windows) pen-testing, malware analysis, and security assessment framework.
+*   **[Jadx](https://github.com/skylot/jadx)** - Command line and GUI tools for producing Java source code from Android Dex and Apk files.
+*   **[Apktool](https://github.com/iBotPeaches/Apktool)** - A tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them.
+*   **[Objection](https://github.com/sensepost/objection)** - A runtime mobile exploration toolkit, powered by Frida, built to help you assess the security of mobile applications without needing jailbreaks.
+
+---
+
+## 5. Bug Bounty Hunting
+
+Tools heavily relied on by security researchers and bug bounty hunters to perform continuous asset discovery and validation.
+
+*   **[Amass](https://github.com/owasp-amass/amass)** - In-depth DNS enumeration, attack surface mapping, and external asset discovery using active/passive techniques.
+*   **[httpx](https://github.com/projectdiscovery/httpx)** - A fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library.
+*   **[ffuf (Fuzz Faster U Fool)](https://github.com/ffuf/ffuf)** - A professional, web-fuzzing tool written in Go, optimized for speed and flexible matching filters.
+*   **[Waybackurls](https://github.com/tomnomnom/waybackurls)** - Fetch URLs that the Wayback Machine, Common Crawl, and VirusTotal have cached for target domains.
+*   **[Naabu](https://github.com/projectdiscovery/naabu)** - A fast port scanner written in Go focused on scanning hosts quickly and reliably.
+*   **[Katana](https://github.com/projectdiscovery/katana)** - Next-generation web crawling and spidering framework to extract URLs, endpoints, and inputs.
+
+---
+
+## 6. Cloud & Container Security
+
+Security assessment, configuration auditing, and vulnerability scanning tools for AWS, Azure, GCP, Docker, and Kubernetes.
+
+*   **[Pacu](https://github.com/RhinoSecurityLabs/pacu)** - An open-source AWS exploitation framework designed for offensive security testing of cloud environments.
+*   **[Scout Suite](https://github.com/nccgroup/ScoutSuite)** - An open-source multi-cloud security-auditing tool, which enables security posture assessment of cloud environments.
+*   **[Kubesec](https://kubesec.io/)** - Security risk analysis tool for Kubernetes resources (validates YAML deployment files against security policies).
+*   **[Trivy](https://github.com/aquasecurity/trivy)** - A comprehensive vulnerability scanner for containers, Kubernetes, Infrastructure as Code (IaC), and repositories.
+*   **[CloudSploit](https://github.com/cloudsploit/scans)** - An automated security auditing tool for cloud infrastructure (AWS, Azure, GCP, and Oracle).
+
+---
+
+## 7. API Security
+
+Auditing REST, GraphQL, and SOAP endpoints to detect IDORs, authentication bypasses, and injection attacks.
+
+*   **[Kiterunner](https://github.com/assetnote/kiterunner)** - A tool designed to brute-force and discover endpoints and APIs by sending requests based on historical API data.
+*   **[Astra](https://github.com/flipkart-incubator/Astra)** - Automated security testing framework for REST APIs, integrating easily into CI/CD pipelines.
+*   **[Postman](https://www.postman.com/)** - An API development tool that pentesters use to construct, modify, and replay complex API requests.
+*   **[JWT_Tool](https://github.com/ticarpi/jwt_tool)** - A toolkit for validating, testing, and exploiting JSON Web Tokens (JWTs).
+
+---
+
+## 8. Exploitation Frameworks
 
 After identifying vulnerabilities, these platforms run payloads and deliver shell access to the target systems.
 
@@ -87,7 +170,7 @@ After identifying vulnerabilities, these platforms run payloads and deliver shel
 
 ---
 
-## 5. Post-Exploitation & Privilege Escalation
+## 9. Post-Exploitation & Privilege Escalation
 
 After getting inside a machine, these scripts identify configuration issues to elevate low-privilege users to Root or System Administrator.
 
@@ -98,7 +181,7 @@ After getting inside a machine, these scripts identify configuration issues to e
 
 ---
 
-## 6. Wireless Hacking
+## 10. Wireless Hacking
 
 Auditing wireless security configurations (Wi-Fi, Bluetooth, RFID).
 
@@ -108,7 +191,7 @@ Auditing wireless security configurations (Wi-Fi, Bluetooth, RFID).
 
 ---
 
-## 7. Password Hacking & Cryptography
+## 11. Password Hacking & Cryptography
 
 Tools for bruteforcing logins and cracking password hashes.
 
@@ -118,7 +201,28 @@ Tools for bruteforcing logins and cracking password hashes.
 
 ---
 
-## 8. Reverse Engineering & Malware Analysis
+## 12. Social Engineering & Phishing
+
+Simulating human-centric attacks to train personnel and test organizational awareness.
+
+*   **[GoPhish](https://getgophish.com/)** - An open-source phishing framework designed to conduct internal training campaigns easily.
+*   **[Social-Engineer Toolkit (SET)](https://github.com/trustedsec/social-engineer-toolkit)** - An open-source penetration testing framework designed for social engineering, containing modules for SMS spoofing, spear-phishing, and credential harvesting.
+*   **[Evilginx2](https://github.com/kgretzky/evilginx2)** - A man-in-the-middle phishing framework used for proxying login credentials along with 2FA session cookies.
+
+---
+
+## 13. Physical Security & Hardware Hacking
+
+Hardware, transceivers, and microcontroller tools used to interact with the physical world (RFID, Radio, Bluetooth, USB).
+
+*   **[Flipper Zero](https://flipperzero.one/)** - A portable multi-tool for pentesters and geeks in a toy-like body. It loves hacking digital stuff, such as radio protocols, access control systems, hardware, and more.
+*   **[Proxmark3](https://github.com/RfidResearchGroup/proxmark3)** - The industry standard device for sniffing, reading, and cloning RFID/NFC transponders.
+*   **[USB Rubber Ducky](https://shop.hak5.org/products/usb-rubber-ducky)** - The original Keystroke Injection tool. Looks like a USB drive but behaves like a super-fast keyboard, executing payloads instantly.
+*   **[WiFi Pineapple](https://shop.hak5.org/products/wifi-pineapple)** - A rogue access point auditing tool designed for wireless intelligence gathering and man-in-the-middle attacks.
+
+---
+
+## 14. Reverse Engineering & Malware Analysis
 
 Disassembling binaries to discover vulnerabilities, bypass registration gates, and analyze malware behavior.
 
@@ -129,7 +233,20 @@ Disassembling binaries to discover vulnerabilities, bypass registration gates, a
 
 ---
 
-## 9. Premium Hacking OS / Distributions
+## 15. Blue Teaming & Threat Hunting
+
+Tools used by defensive security teams (SOC) to detect intrusions, monitor networks, analyze logs, and contain malware.
+
+*   **[Wazuh](https://wazuh.com/)** - A free, open-source enterprise security monitoring solution for threat detection, integrity monitoring, incident response, and compliance.
+*   **[Elastic Security](https://www.elastic.co/security)** - Combines SIEM features with endpoint security, letting defenders analyze massive amounts of logs in real-time.
+*   **[Wireshark](https://www.wireshark.org/)** - The world's foremost network protocol analyzer, letting defenders intercept and analyze raw network traffic packets.
+*   **[Zeek](https://zeek.org/)** - A powerful network security monitoring framework that interprets network traffic and generates structured transaction logs.
+*   **[Suricata](https://suricata.io/)** - A high-performance Network Threat Detection, IDS, and IPS engine.
+*   **[YARA](https://github.com/VirusTotal/yara)** - A tool aimed at helping malware researchers identify and classify malware samples based on textual or binary patterns.
+
+---
+
+## 16. Premium Hacking OS / Distributions
 
 Operating systems that come pre-packaged with all the ethical hacking tools mentioned above.
 
@@ -139,7 +256,7 @@ Operating systems that come pre-packaged with all the ethical hacking tools ment
 
 ---
 
-## 10. Quick-Reference Tools Matrix
+## 17. Quick-Reference Tools Matrix
 
 | Tool | Category | License | Platform Support | Primary Purpose |
 | :--- | :--- | :--- | :--- | :--- |
@@ -148,12 +265,13 @@ Operating systems that come pre-packaged with all the ethical hacking tools ment
 | **Metasploit** | Exploitation | Open Source / Comm | Linux, Win, macOS | Exploit execution and payload management |
 | **Hashcat** | Password | Open Source | Linux, Win, macOS | GPU-accelerated hash cracking |
 | **Ghidra** | Rev. Engineering | Open Source | Linux, Win, macOS | Binary disassembling and decompilation |
-| **LinPEAS** | Post-Exploit | Open Source | Linux | Privilege escalation scanning |
-| **BloodHound** | AD Security | Open Source | Linux, Win, macOS | Map Active Directory attack paths |
+| **Frida** | Mobile Security | Open Source | Android, iOS, Win | Dynamic runtime binary hook and injection |
+| **Amass** | Bug Bounty | Open Source | Linux, Win, macOS | DNS enumeration and asset surface mapping |
+| **Wazuh** | Blue Teaming | Open Source | Linux, Win, macOS | Open source SIEM and endpoint security |
 
 ---
 
-## 11. Contribution Guidelines
+## 18. Contribution Guidelines
 
 Have a tool that deserves to be on this list?
 1. Check that the tool is active, open-source (or has a widely used free tier), and not deprecated.

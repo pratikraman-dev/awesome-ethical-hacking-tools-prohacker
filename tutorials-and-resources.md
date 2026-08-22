@@ -1,17 +1,45 @@
 # Awesome Ethical Hacking Tutorials & Resources
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Awesome-Hacking-brightgreen.svg" alt="Awesome Hacking">
-  <img src="https://img.shields.io/badge/PRs-Welcome-blue.svg" alt="PRs Welcome">
-  <img src="https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg" alt="License Apache 2.0">
-  <img src="https://img.shields.io/badge/Category-Education%20%26%20Resources-orange.svg" alt="Category">
-</p>
+<div align="center">
+  
+  [![Awesome Hacking](https://img.shields.io/badge/Awesome-Hacking-brightgreen.svg)](https://github.com/pratikraman-dev/awesome-ethical-hacking-tools-prohacker)
+  [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-blue.svg)](https://github.com/pratikraman-dev/awesome-ethical-hacking-tools-prohacker/blob/main/README.md#18-contribution-guidelines)
+  [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://github.com/pratikraman-dev/awesome-ethical-hacking-tools-prohacker/blob/main/LICENSE)
+  [![Category](https://img.shields.io/badge/Category-Education%20%26%20Resources-orange.svg)](https://github.com/pratikraman-dev/awesome-ethical-hacking-tools-prohacker/blob/main/tutorials-and-resources.md)
+  
+</div>
+
+---
+
+<div align="center">
+  <h2>📱 Sponsored Mobile App</h2>
+  <h3>Pro Hacker: Ethical Hacking</h3>
+  <p><b>Master Cybersecurity, Penetration Testing, and Hacking Foundations directly from your phone!</b></p>
+  
+  <a href="https://play.google.com/store/apps/details?id=com.gripxtech.prohacker&hl=en_IN" target="_blank">
+    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get Pro Hacker on Google Play" height="80px">
+  </a>
+  
+  <p align="center" style="max-width: 600px;">
+    🚀 Developed by <b>GripxTech</b>, <b>Pro Hacker</b> is the ultimate interactive learning companion. Learn Kali Linux, web application hacking, network scanning, and Python scripting through structured lessons, real-world case studies, and gamified quizzes.
+  </p>
+  
+  <table>
+    <tr>
+      <td>📚 <b>Structured Courses</b></td>
+      <td>🎮 <b>Interactive Quizzes</b></td>
+      <td>🛡️ <b>Real-world Scenarios</b></td>
+      <td>🐧 <b>Kali Linux Tutorials</b></td>
+    </tr>
+  </table>
+</div>
+
+---
 
 Welcome to the ultimate curated collection of ethical hacking tutorials, reference manuals, learning paths, interactive labs, and cybersecurity cheat sheets. This repository is designed to take you from a complete beginner to an advanced penetration tester or security researcher.
 
 > [!NOTE]
 > Looking for the curated tools directory organized by hacking methodology? Check out our: **[Awesome Ethical Hacking Tools](README.md)**!
-
 
 > [!WARNING]
 > **Disclaimer:** This repository and the resources listed herein are intended solely for educational, research, and authorized testing purposes. Performing security assessments or scanning networks without prior explicit consent is illegal. Use these resources responsibly and ethically.
@@ -26,10 +54,15 @@ Welcome to the ultimate curated collection of ethical hacking tutorials, referen
   * [Phase 3: Specialized Security (Advanced)](#phase-3-specialized-security-advanced)
 * [2. Tutorials & Video Courses](#2-tutorials--video-courses)
 * [3. Hands-on Practice Labs & CTFs](#3-hands-on-practice-labs--ctfs)
-* [4. Must-Read Books & Publications](#4-must-read-books--publications)
-* [5. Ultimate Security Cheat Sheets](#5-ultimate-security-cheat-sheets)
-* [6. Blogs, Podcasts & Newsletters](#6-blogs-podcasts--newsletters)
-* [7. How to Contribute](#7-how-to-contribute)
+* [4. Mobile App Pentesting Guides](#4-mobile-app-pentesting-guides)
+* [5. Bug Bounty Writeups & Platforms](#5-bug-bounty-writeups--platforms)
+* [6. Cloud Hacking Wargames & Tutorials](#6-cloud-hacking-wargames--tutorials)
+* [7. API Pentesting Tutorials](#7-api-pentesting-tutorials)
+* [8. Threat Hunting & Blue Teaming Labs](#8-threat-hunting--blue-teaming-labs)
+* [9. Must-Read Books & Publications](#9-must-read-books--publications)
+* [10. Ultimate Security Cheat Sheets](#10-ultimate-security-cheat-sheets)
+* [11. Blogs, Podcasts & Newsletters](#11-blogs-podcasts--newsletters)
+* [12. How to Contribute](#12-how-to-contribute)
 
 ---
 
@@ -88,7 +121,60 @@ Hacking is a practical skill. You must get your hands dirty in legal wargames an
 
 ---
 
-## 4. Must-Read Books & Publications
+## 4. Mobile App Pentesting Guides
+
+Learning methodologies and tutorials to deconstruct, modify, and audit mobile applications.
+
+*   **[OWASP MASVS (Mobile Application Security Verification Standard)](https://mas.owasp.org/MASVS/)** - The industry-standard security checklist for designing and auditing mobile applications.
+*   **[HackTricks - Mobile Pentesting](https://book.hacktricks.xyz/mobile-pentesting/android-app-pentesting)** - Highly detailed, community-driven collection of techniques for Android and iOS exploitation.
+*   **[Frida Bootstrapping & Hooking Tutorials](https://learnfrida.info/)** - Learn how to write custom JavaScript scripts to override binary checks at runtime.
+*   **[Baeldung - Reverse Engineering Android Apps](https://www.baeldung.com/)** - Step-by-step developer guides on decompiling DEX files and rewriting APK classes.
+
+---
+
+## 5. Bug Bounty Writeups & Platforms
+
+How to read and understand real bug reports, disclose vulnerabilities legally, and get paid.
+
+*   **[HackerOne Hacktivity](https://hackerone.com/hacktivity)** - A public feed of vulnerability disclosures showing real bug descriptions, communications, and payouts.
+*   **[Pentester Land Writeups List](https://pentester.land/writeups/)** - A meticulously curated list of security writeups categorized by bug type (XSS, IDOR, SSRF).
+*   **[Bugcrowd University](https://www.bugcrowd.com/resources/webinars/bugcrowd-university/)** - Free educational resources, modules, and videos hosted by elite bug bounty hunters.
+*   **[Intigriti Bug Bounty Blog](https://blog.intigriti.com/)** - Weekly hacky-hour newsletters, write-ups, and security challenges for bug hunters.
+
+---
+
+## 6. Cloud Hacking Wargames & Tutorials
+
+Interactive sandboxes designed to teach cloud-based exploitation (IAM role delegation, open S3 buckets, cloud-metadata extraction).
+
+*   **[Flaws.cloud](http://flaws.cloud/)** - An interactive wargame focused on common AWS misconfigurations, permissions bugs, and serverless exploitation.
+*   **[Flaws2.cloud](http://flaws2.cloud/)** - A sequel to flaws.cloud, offering two distinct paths: attacker (offensive) and defender (incident response).
+*   **[CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat)** - A vulnerable-by-design AWS deployment tool that lets you spin up sandboxes on your own cloud instance.
+*   **[Kube-Hunter](https://github.com/aquasecurity/kube-hunter)** - Hunt for security weaknesses in Kubernetes clusters.
+
+---
+
+## 7. API Pentesting Tutorials
+
+Guides on auditing backend Web APIs for hidden routes, missing authorization scopes, and data exposures.
+
+*   **[OWASP API Security Top 10 Project](https://owasp.org/www-project-api-security/)** - Explains the ten most critical security risks facing web APIs (e.g., BOLA, Broken Object Level Authorization).
+*   **[API Security Academy](https://apisecuniversity.com/)** - A free university providing certifications and courses in API penetration testing.
+*   **[Immersive Labs - API Vulnerabilities](https://www.immersivelabs.com/)** - Practical hands-on modules explaining REST, GraphQL, and microservice flaws.
+
+---
+
+## 8. Threat Hunting & Blue Teaming Labs
+
+Defensive training environments covering log analysis, digital forensics, incident response, and threat detection engineering.
+
+*   **[CyberDefenders](https://cyberdefenders.org/)** - Blue team training platform offering practice challenges in memory analysis, packet inspection, and endpoint forensics.
+*   **[Blue Team Labs Online (BTLO)](https://blueteamlabs.online/)** - Defensive security wargames covering Incident Response, Security Operations, Threat Hunting, and Digital Forensics.
+*   **[LetsDefend](https://letsdefend.io/)** - A hands-on SOC analyst training simulator designed to emulate real corporate alerts and investigation dashboards.
+
+---
+
+## 9. Must-Read Books & Publications
 
 Great books provide the deep conceptual frameworks that quick tutorials sometimes miss.
 
@@ -118,7 +204,7 @@ graph TD
 
 ---
 
-## 5. Ultimate Security Cheat Sheets
+## 10. Ultimate Security Cheat Sheets
 
 Quick reference guides for commands and syntax during assessments.
 
@@ -133,7 +219,7 @@ Quick reference guides for commands and syntax during assessments.
 
 ---
 
-## 6. Blogs, Podcasts & Newsletters
+## 11. Blogs, Podcasts & Newsletters
 
 Stay up to date with the latest industry news, zero-days, and write-ups.
 
@@ -145,7 +231,7 @@ Stay up to date with the latest industry news, zero-days, and write-ups.
 
 ---
 
-## 7. How to Contribute
+## 12. How to Contribute
 
 We welcome contributions from the community! To suggest new tutorials or update broken links:
 
