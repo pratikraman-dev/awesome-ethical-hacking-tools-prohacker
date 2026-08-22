@@ -40,6 +40,12 @@ A curated, comprehensive directory of awesome tools for ethical hacking, penetra
 
 > [!NOTE]
 > Looking for guided learning roadmaps, video courses, books, and wargames? Check out our curated list: **[Awesome Hacking Tutorials & Resources](tutorials-and-resources.md)**!
+> 
+> ⚡ **Quick Access Custom Cheat Sheets:**
+> *   **[Nmap Scanning Cheat Sheet](cheatsheets/nmap-scanning.md)** — Host discovery, port scans, service version detection, and NSE scripting.
+> *   **[Privilege Escalation Cheat Sheet](cheatsheets/privilege-escalation.md)** — Linux SUID/Sudo and Windows Service/Registry privilege escalation commands.
+> *   **[Active Directory Hacking Cheat Sheet](cheatsheets/active-directory.md)** — Domain enumeration, Kerberos attacks (Rubeus/Impacket), and lateral movement.
+
 
 > [!WARNING]
 > **Disclaimer:** This repository and the tools listed herein are intended solely for educational, research, and authorized security testing. Running these tools against networks, systems, or web applications without explicit written permission from the owner is strictly prohibited and illegal.
