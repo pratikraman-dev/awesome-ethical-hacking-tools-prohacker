@@ -90,6 +90,8 @@ Reconnaissance is the most critical phase of penetration testing. These tools he
 *   **[Maltego](https://www.maltego.com/)** - An interactive data mining tool that visualizes links between domains, IP addresses, companies, and individuals.
 *   **[Spiderfoot](https://github.com/smicallef/spiderfoot)** - An OSINT automation tool that queries over 100 public data sources to gather intelligence on IPs, domain names, and emails.
 *   **[Sublist3r](https://github.com/aboul3la/Sublist3r)** - Fast subdomain enumerator designed to search popular search engines and DNS repositories.
+*   **[Sherlock](https://github.com/sherlock-project/sherlock)** - Search social media accounts by username across hundreds of websites.
+*   **[DNSRecon](https://github.com/darkoperator/dnsrecon)** - A powerful DNS enumeration tool for security auditing, domain discovery, and zone transfers.
 
 ---
 
@@ -101,6 +103,7 @@ Once targets are identified, these tools scan for open ports, misconfigurations,
 *   **[OpenVAS / Greenbone](https://www.openvas.org/)** - A full-featured, open-source vulnerability scanner with daily feed updates.
 *   **[Nikto](https://github.com/sullo/nikto)** - An open-source web server scanner that performs rapid tests against servers for multiple items, including over 6700 potentially dangerous files/programs.
 *   **[Nuclei](https://github.com/projectdiscovery/nuclei)** - Fast and customizable vulnerability scanner based on simple YAML-based templates. Very popular in modern bug hunting.
+*   **[Masscan](https://github.com/robertdavidgraham/masscan)** - An ultra-fast TCP port scanner; transmits packets asynchronously, capable of scanning the entire internet in under 6 minutes.
 
 ---
 
@@ -120,6 +123,8 @@ graph LR
 *   **[sqlmap](https://sqlmap.org/)** - An open-source tool that automates the process of detecting and exploiting SQL injection flaws and taking over database servers.
 *   **[Gobuster](https://github.com/OJ/gobuster)** - A fast directory/file, DNS, and vhost busting tool written in Go.
 *   **[Wfuzz](https://github.com/xmendez/wfuzz)** - Extremely flexible web fuzzer designed for bruteforcing GET/POST parameters, headers, and paths.
+*   **[Arjun](https://github.com/s0md3v/Arjun)** - Find hidden query parameters on HTTP endpoints. Very useful for parameter pollution and discovery.
+*   **[Dirsearch](https://github.com/maurosoria/dirsearch)** - An advanced web path finder/brute-forcer with directory/file enumeration.
 
 ---
 

@@ -123,6 +123,8 @@ Hacking is a practical skill. You must get your hands dirty in legal wargames an
 *   **[PortSwigger Academy Labs](https://portswigger.net/web-security/all-labs)** - *Best for Web Hacking.* Hundreds of interactive labs covering SQL injection, XSS, CSRF, SSRF, and API vulnerability exploitation.
 *   **[VulnHub](https://www.vulnhub.com/)** - *Offline VM practice.* Downloadable virtual machines containing pre-configured vulnerabilities for local training.
 *   **[CTFtime](https://ctftime.org/)** - *Capture The Flag Tracker.* The main directory for tracking global competitive hacking (CTF) events.
+*   **[PentesterLab](https://pentesterlab.com/)** - High quality, structured hands-on exercises covering web application vulnerabilities from basic to advanced.
+*   **[CMD Challenge](https://cmdchallenge.com/)** - A simple and fun interactive command-line wargame to practice and test your Bash skills.
 
 ---
 
@@ -224,6 +226,7 @@ Quick reference guides for commands and syntax during assessments.
 *   **[LOLBAS](https://lolbas-project.github.io/)** - (Living Off The Land Binaries and Scripts) The Windows equivalent of GTFOBins for privilege escalation and evasion.
 *   **[Nmap Cheat Sheet](https://sushant747.gitbooks.io/total-oscp-guide/content/nmap_cheat_sheet.html)** - Quick reference for scanning networks, OS detection, and NSE scripts.
 *   **[Active Directory Attack Cheat Sheet](https://github.com/Orange-Cyberdefense/arsenal)** - Commands and techniques for compromising Active Directory environments.
+*   **[Reverse Shell Generator](https://www.revshells.com/)** - Online interactive generator supporting multiple shells (bash, sh, python, powershell, php, nc) with listener setup codes.
 
 
 ---
