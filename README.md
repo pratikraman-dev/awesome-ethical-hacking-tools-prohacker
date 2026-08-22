@@ -1,156 +1,161 @@
-# Awesome Ethical Hacking Tutorials & Resources
+# Awesome Ethical Hacking Tools
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Awesome-Hacking-brightgreen.svg" alt="Awesome Hacking">
+  <img src="https://img.shields.io/badge/Awesome-Hacking%20Tools-brightgreen.svg" alt="Awesome Hacking Tools">
   <img src="https://img.shields.io/badge/PRs-Welcome-blue.svg" alt="PRs Welcome">
   <img src="https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg" alt="License Apache 2.0">
-  <img src="https://img.shields.io/badge/Category-Education%20%26%20Resources-orange.svg" alt="Category">
+  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg" alt="Platform Support">
 </p>
 
-Welcome to the ultimate curated collection of ethical hacking tutorials, reference manuals, learning paths, interactive labs, and cybersecurity cheat sheets. This repository is designed to take you from a complete beginner to an advanced penetration tester or security researcher.
+A curated, comprehensive directory of awesome tools for ethical hacking, penetration testing, and security auditing. The tools are organized by the phase of standard penetration testing methodology.
+
+> [!NOTE]
+> Looking for guided learning roadmaps, video courses, books, and wargames? Check out our curated list: **[Awesome Hacking Tutorials & Resources](tutorials-and-resources.md)**!
+
 
 > [!WARNING]
-> **Disclaimer:** This repository and the resources listed herein are intended solely for educational, research, and authorized testing purposes. Performing security assessments or scanning networks without prior explicit consent is illegal. Use these resources responsibly and ethically.
+> **Disclaimer:** This repository and the tools listed herein are intended solely for educational, research, and authorized security testing. Running these tools against networks, systems, or web applications without explicit written permission from the owner is strictly prohibited and illegal.
 
 ---
 
 ## Table of Contents
 
-* [1. Guided Learning Paths](#1-guided-learning-paths)
-  * [Phase 1: Foundations (Beginner)](#phase-1-foundations-beginner)
-  * [Phase 2: Core Penetration Testing (Intermediate)](#phase-2-core-penetration-testing-intermediate)
-  * [Phase 3: Specialized Security (Advanced)](#phase-3-specialized-security-advanced)
-* [2. Tutorials & Video Courses](#2-tutorials--video-courses)
-* [3. Hands-on Practice Labs & CTFs](#3-hands-on-practice-labs--ctfs)
-* [4. Must-Read Books & Publications](#4-must-read-books--publications)
-* [5. Ultimate Security Cheat Sheets](#5-ultimate-security-cheat-sheets)
-* [6. Blogs, Podcasts & Newsletters](#6-blogs-podcasts--newsletters)
-* [7. How to Contribute](#7-how-to-contribute)
+* [1. Information Gathering & Reconnaissance (OSINT)](#1-information-gathering--reconnaissance-osint)
+* [2. Scanning & Vulnerability Analysis](#2-scanning--vulnerability-analysis)
+* [3. Web Application Security](#3-web-application-security)
+* [4. Exploitation Frameworks](#4-exploitation-frameworks)
+* [5. Post-Exploitation & Privilege Escalation](#5-post-exploitation--privilege-escalation)
+* [6. Wireless Hacking](#6-wireless-hacking)
+* [7. Password Hacking & Cryptography](#7-password-hacking--cryptography)
+* [8. Reverse Engineering & Malware Analysis](#8-reverse-engineering--malware-analysis)
+* [9. Premium Hacking OS / Distributions](#9-premium-hacking-os--distributions)
+* [10. Quick-Reference Tools Matrix](#10-quick-reference-tools-matrix)
+* [11. Contribution Guidelines](#11-contribution-guidelines)
 
 ---
 
-## 1. Guided Learning Paths
+## 1. Information Gathering & Reconnaissance (OSINT)
 
-Following a structured learning path is essential for mastering cybersecurity. Below is a recommended roadmap depending on your current level.
+Reconnaissance is the most critical phase of penetration testing. These tools help collect public records, active domains, open directories, and target profiles.
 
-### Phase 1: Foundations (Beginner)
-* **Goal:** Master networking concepts, operating systems (Linux & Windows command line), and scripting.
-* **Topics to Cover:** TCP/IP model, routing, DNS, basic Bash/PowerShell commands, Python basics.
-* **Recommended Start:**
-  * Read through the [Linux Journey](https://linuxjourney.com/) tutorials.
-  * Complete the **Pre-Security Path** on [TryHackMe](https://tryhackme.com/).
-
-### Phase 2: Core Penetration Testing (Intermediate)
-* **Goal:** Understand web vulnerabilities, network attacks, and standard exploitation methodologies.
-* **Topics to Cover:** OWASP Top 10, network scanning (Nmap), Metasploit, privilege escalation basics.
-* **Recommended Start:**
-  * Complete [PortSwigger Web Security Academy](https://portswigger.net/web-security) for web hacking.
-  * Work through the **Junior Penetration Tester** path on TryHackMe.
-  * Solve the **OverTheWire Bandit** wargame to master SSH and command-line parsing.
-
-### Phase 3: Specialized Security (Advanced)
-* **Goal:** Dive deep into Active Directory (AD) exploitation, binary analysis, custom exploit development, and cloud security.
-* **Topics to Cover:** Kerberoasting, buffer overflows, reverse engineering with Ghidra, AWS/Azure pentesting.
-* **Recommended Start:**
-  * Take the **Active Directory Hacking** tutorials by [TCM Security](https://tcm-sec.com/).
-  * Tackle [Hack The Box (HTB)](https://www.hackthebox.com/) active machines.
+*   **[nmap](https://nmap.org/)** - The industry standard for network discovery and vulnerability scanning.
+*   **[theHarvester](https://github.com/laramies/theHarvester)** - Gather emails, subdomains, hosts, employee names, open ports, and banners from public sources (Google, Bing, LinkedIn, etc.).
+*   **[Shodan](https://www.shodan.io/)** - A search engine for internet-connected devices. Useful for locating exposed databases, routers, and IoT hardware.
+*   **[Maltego](https://www.maltego.com/)** - An interactive data mining tool that visualizes links between domains, IP addresses, companies, and individuals.
+*   **[Spiderfoot](https://github.com/smicallef/spiderfoot)** - An OSINT automation tool that queries over 100 public data sources to gather intelligence on IPs, domain names, and emails.
+*   **[Sublist3r](https://github.com/aboul3la/Sublist3r)** - Fast subdomain enumerator designed to search popular search engines and DNS repositories.
 
 ---
 
-## 2. Tutorials & Video Courses
+## 2. Scanning & Vulnerability Analysis
 
-A selection of the highest-rated free and premium video guides and interactive tutorials for ethical hacking.
+Once targets are identified, these tools scan for open ports, misconfigurations, and known CVEs.
 
-| Course/Tutorial Name | Provider | Cost | Level | Link |
-| :--- | :--- | :--- | :--- | :--- |
-| **Practical Ethical Hacking** | TCM Security (Heath Adams) | Paid (Affordable) | Beginner-Intermediate | [Visit Course](https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course) |
-| **Web Security Academy** | PortSwigger | **Free** | Beginner-Advanced | [Visit Academy](https://portswigger.net/web-security) |
-| **Ethical Hacking Course (15 Hours)** | freeCodeCamp (Cyber-Insecurity) | **Free** | Beginner | [Watch on YouTube](https://www.youtube.com/watch?v=3Kq1MIfTWCE) |
-| **Introduction to IT & Cybersecurity** | Cybrary | **Free** / Paid | Beginner | [Visit Cybrary](https://www.cybrary.it/course/introduction-to-it-and-cybersecurity) |
-| **SANS Cyber Aces Online** | SANS Institute | **Free** | Beginner | [Visit SANS](http://www.cyberaces.org/) |
+*   **[Nessus](https://www.tenable.com/products/nessus)** - A commercial, highly polished vulnerability assessment tool for networks, cloud configurations, and systems.
+*   **[OpenVAS / Greenbone](https://www.openvas.org/)** - A full-featured, open-source vulnerability scanner with daily feed updates.
+*   **[Nikto](https://github.com/sullo/nikto)** - An open-source web server scanner that performs rapid tests against servers for multiple items, including over 6700 potentially dangerous files/programs.
+*   **[Nuclei](https://github.com/projectdiscovery/nuclei)** - Fast and customizable vulnerability scanner based on simple YAML-based templates. Very popular in modern bug hunting.
 
 ---
 
-## 3. Hands-on Practice Labs & CTFs
+## 3. Web Application Security
 
-Hacking is a practical skill. You must get your hands dirty in legal wargames and sandboxes.
-
-*   **[TryHackMe](https://tryhackme.com/)** - *Best for Beginners.* Gamified, bite-sized rooms with guided instructions covering everything from Linux to Active Directory.
-*   **[Hack The Box](https://www.hackthebox.com/)** - *Best for Intermediate/Advanced.* Emulates real-world networks. Requires independent research to compromise virtual machines.
-*   **[OverTheWire](https://overthewire.org/wargames/)** - *Best Command-line Training.* Text-based wargames starting with Bandit, helping you learn Linux commands and cybersecurity concepts.
-*   **[PortSwigger Academy Labs](https://portswigger.net/web-security/all-labs)** - *Best for Web Hacking.* Hundreds of interactive labs covering SQL injection, XSS, CSRF, SSRF, and API vulnerability exploitation.
-*   **[VulnHub](https://www.vulnhub.com/)** - *Offline VM practice.* Downloadable virtual machines containing pre-configured vulnerabilities for local training.
-*   **[CTFtime](https://ctftime.org/)** - *Capture The Flag Tracker.* The main directory for tracking global competitive hacking (CTF) events.
-
----
-
-## 4. Must-Read Books & Publications
-
-Great books provide the deep conceptual frameworks that quick tutorials sometimes miss.
+Websites are the most common entry point for attackers. These tools intercept and analyze web traffic, scan for injections, and map hidden endpoints.
 
 ```mermaid
-graph TD
-    A["Cybersecurity Reading List"] --> B("Foundations")
-    A --> C("Penetration Testing")
-    A --> D("Web Applications")
-    
-    B --> B1("The Phoenix Project (DevOps/Culture)")
-    C --> C1("Penetration Testing: A Hands-On Introduction to Hacking (Georgia Weidman)")
-    C --> C2("The Hacker Playbook 3 (Peter Kim)")
-    D --> D1("The Web Application Hacker's Handbook (Dafydd Stuttard)")
-    D --> D2("Real-World Bug Hunting (Peter Yaworski)")
+graph LR
+    User["Pentester / Browser"] -->|Intercepts Traffic| Burp["Burp Suite / ZAP"]
+    Burp -->|Sends Payload| WebServer["Target Web Application"]
+    WebServer -->|Validates/Injects| DB["SQLmap (Database Extraction)"]
 ```
 
-*   **The Web Application Hacker's Handbook** *by Dafydd Stuttard & Marcus Pinto*
-    *   *The definitive guide to finding and exploiting web vulnerabilities.*
-*   **Penetration Testing: A Hands-On Introduction to Hacking** *by Georgia Weidman*
-    *   *Excellent step-by-step introduction to setting up a lab and hacking networks/machines.*
-*   **The Hacker Playbook 3: Practical Guide to Penetration Testing** *by Peter Kim*
-    *   *Provides red team strategies, tools, and methodologies for advanced testers.*
-*   **Real-World Bug Hunting: A Field Guide to Web Hacking** *by Peter Yaworski*
-    *   *Analyzes real bug reports to explain how bug hunters earn bounties.*
-*   **RTFM: Red Team Field Manual** *by Ben Clark*
-    *   *A pocket-sized reference book containing essential commands and syntax.*
+*   **[Burp Suite](https://portswigger.net/burp)** - The gold-standard web proxy for intercepting, modifying, and analyzing HTTP traffic between the browser and target server.
+*   **[OWASP ZAP](https://www.zaproxy.org/)** - The most popular open-source alternative to Burp Suite, offering proxying, spidering, and vulnerability scanning.
+*   **[sqlmap](https://sqlmap.org/)** - An open-source tool that automates the process of detecting and exploiting SQL injection flaws and taking over database servers.
+*   **[Gobuster](https://github.com/OJ/gobuster)** - A fast directory/file, DNS, and vhost busting tool written in Go.
+*   **[Wfuzz](https://github.com/xmendez/wfuzz)** - Extremely flexible web fuzzer designed for bruteforcing GET/POST parameters, headers, and paths.
 
 ---
 
-## 5. Ultimate Security Cheat Sheets
+## 4. Exploitation Frameworks
 
-Quick reference guides for commands and syntax during assessments.
+After identifying vulnerabilities, these platforms run payloads and deliver shell access to the target systems.
 
-> [!TIP]
-> Keep these open on your second monitor during CTFs and exams!
-
-*   **[PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)** - An enormous repository of payloads and bypasses for Web Application Security.
-*   **[GTFOBins](https://gtfobins.github.io/)** - A curated list of Unix binaries that can be exploited to bypass local security restrictions and escalate privileges.
-*   **[LOLBAS](https://lolbas-project.github.io/)** - (Living Off The Land Binaries and Scripts) The Windows equivalent of GTFOBins for privilege escalation and evasion.
-*   **[Nmap Cheat Sheet](https://sushant747.gitbooks.io/total-oscp-guide/content/nmap_cheat_sheet.html)** - Quick reference for scanning networks, OS detection, and NSE scripts.
-*   **[Active Directory Attack Cheat Sheet](https://github.com/Orange-Cyberdefense/arsenal)** - Commands and techniques for compromising Active Directory environments.
+*   **[Metasploit Framework](https://www.metasploit.com/)** - The most widely used penetration testing platform. It contains database tracking, exploit modules, payloads, and post-exploitation scripts.
+*   **[Beef](https://github.com/beefproject/beef)** - (Browser Exploitation Framework) Focuses on client-side attacks against web browsers to run scripts, bypass security controls, and pivot.
+*   **[ExploitDB](https://www.exploit-db.com/)** - An archive of public exploits and shellcode for various software versions, managed by Offensive Security.
 
 ---
 
-## 6. Blogs, Podcasts & Newsletters
+## 5. Post-Exploitation & Privilege Escalation
 
-Stay up to date with the latest industry news, zero-days, and write-ups.
+After getting inside a machine, these scripts identify configuration issues to elevate low-privilege users to Root or System Administrator.
 
-*   **[Darknet Diaries](https://darknetdiaries.com/)** *(Podcast)* - Incredible storytelling covering true stories of hackers, hacktivism, cyber warfare, and shadow operations.
-*   **[TLDR Sec](https://tldrsec.com/)** *(Newsletter)* - A weekly newsletter summarizing the best security blog posts, tools, and research.
-*   **[Krebs on Security](https://krebsonsecurity.com/)** *(Blog)* - In-depth investigative journalism focusing on global cybercrime syndicates and breaches.
-*   **[Daniel Miessler - Unsupervised Learning](https://danielmiessler.com/)** *(Blog & Newsletter)* - Explores the intersection of security, technology, and society.
-*   **[HackRead](https://www.hackread.com/)** *(News Portal)* - Real-time coverage of security breaches, malware campaigns, and hacking incidents.
+*   **[Mimikatz](https://github.com/gentilkiwi/mimikatz)** - A powerful Windows post-exploitation tool that extracts plain text passwords, hash dumps, PINs, and Kerberos tickets from memory (LSASS).
+*   **[PEASS-ng (LinPEAS / WinPEAS)](https://github.com/carlospolop/PEASS-ng)** - Essential scripts for checking privilege escalation paths on Linux and Windows machines.
+*   **[BloodHound](https://github.com/BloodHoundAD/BloodHound)** - A single-page Javascript web application that uses graph theory to reveal hidden and unintended relationships in Active Directory environments.
+*   **[Impacket](https://github.com/fortra/impacket)** - A collection of Python classes for working with network protocols (SMB, MSRPC, LDAP). Essential for lateral movement in Windows networks.
 
 ---
 
-## 7. How to Contribute
+## 6. Wireless Hacking
 
-We welcome contributions from the community! To suggest new tutorials or update broken links:
+Auditing wireless security configurations (Wi-Fi, Bluetooth, RFID).
 
-1.  **Fork** this repository.
-2.  Create a new branch (`git checkout -b feature/suggest-resource`).
-3.  Add your resource using the markdown formatting guidelines:
-    ```markdown
-    *   **[Resource Name](URL)** - Short, objective description of what the resource covers.
-    ```
-4.  Commit your changes (`git commit -m 'Add new Linux buffer overflow tutorial'`).
-5.  Push your branch (`git push origin feature/suggest-resource`).
-6.  Open a **Pull Request** explaining why the resource is high quality and belongs in this list.
+*   **[Aircrack-ng](https://www.aircrack-ng.org/)** - A complete suite of tools to assess WiFi network security. Includes monitoring, attacking, testing, and cracking tools.
+*   **[Kismet](https://www.kismetwireless.net/)** - A wireless network and device detector, sniffer, wardriving tool, and WIDS (Wireless Intrusion Detection System).
+*   **[Wifite2](https://github.com/derv82/wifite2)** - A Python script to automate wireless auditing of WEP, WPA-PSK, and WPS encrypted networks.
+
+---
+
+## 7. Password Hacking & Cryptography
+
+Tools for bruteforcing logins and cracking password hashes.
+
+*   **[Hashcat](https://hashcat.net/hashcat/)** - The world's fastest CPU/GPU-based password recovery utility. Supports hundreds of hashing algorithms.
+*   **[John the Ripper](https://www.openwall.com/john/)** - A highly customizable, fast password cracker for Unix, Windows, and macOS, supporting dictionary attacks and rules.
+*   **[Hydra](https://github.com/vanhauser-thc/thc-hydra)** - A very fast network logon cracker which supports numerous protocols including SSH, RDP, FTP, HTTP-POST, and Telnet.
+
+---
+
+## 8. Reverse Engineering & Malware Analysis
+
+Disassembling binaries to discover vulnerabilities, bypass registration gates, and analyze malware behavior.
+
+*   **[Ghidra](https://ghidra-sre.org/)** - A software reverse engineering (SRE) suite created and maintained by the National Security Agency (NSA). Includes a decompiler.
+*   **[IDA Pro](https://hex-rays.com/ida-pro/)** - The industry-standard commercial disassembler and debugger, widely praised for its graph layout and plugin ecosystem.
+*   **[Radare2](https://www.radare.org/)** - A complete command-line-based framework for reverse-engineering, debugging, and binary patching.
+*   **[x64dbg](https://x64dbg.com/)** - An open-source x64/x32 debugger for Windows, geared towards malware analysis and software cracking.
+
+---
+
+## 9. Premium Hacking OS / Distributions
+
+Operating systems that come pre-packaged with all the ethical hacking tools mentioned above.
+
+*   **[Kali Linux](https://www.kali.org/)** - The most popular Debian-based Linux distribution geared toward information security professionals and penetration testers.
+*   **[Parrot Security OS](https://www.parrotsec.org/)** - A lightweight, privacy-focused Linux distribution designed for security experts, developers, and sysadmins.
+*   **[BlackArch Linux](https://blackarch.org/)** - An Arch Linux-based distribution containing over 2800 security tools for advanced penetration testing.
+
+---
+
+## 10. Quick-Reference Tools Matrix
+
+| Tool | Category | License | Platform Support | Primary Purpose |
+| :--- | :--- | :--- | :--- | :--- |
+| **Nmap** | Scanning | Open Source | Linux, Win, macOS | Port scanning and OS fingerprinting |
+| **Burp Suite** | Web Security | Free / Commercial | Linux, Win, macOS | HTTP interception proxy & vulnerability scanner |
+| **Metasploit** | Exploitation | Open Source / Comm | Linux, Win, macOS | Exploit execution and payload management |
+| **Hashcat** | Password | Open Source | Linux, Win, macOS | GPU-accelerated hash cracking |
+| **Ghidra** | Rev. Engineering | Open Source | Linux, Win, macOS | Binary disassembling and decompilation |
+| **LinPEAS** | Post-Exploit | Open Source | Linux | Privilege escalation scanning |
+| **BloodHound** | AD Security | Open Source | Linux, Win, macOS | Map Active Directory attack paths |
+
+---
+
+## 11. Contribution Guidelines
+
+Have a tool that deserves to be on this list?
+1. Check that the tool is active, open-source (or has a widely used free tier), and not deprecated.
+2. Fork the repository and add the tool under the appropriate category.
+3. Create a Pull Request with details about what the tool does and why it is awesome!
