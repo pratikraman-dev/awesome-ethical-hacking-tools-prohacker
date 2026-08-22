@@ -96,6 +96,8 @@ Reconnaissance is the most critical phase of penetration testing. These tools he
 *   **[Sublist3r](https://github.com/aboul3la/Sublist3r)** - Fast subdomain enumerator designed to search popular search engines and DNS repositories.
 *   **[Sherlock](https://github.com/sherlock-project/sherlock)** - Search social media accounts by username across hundreds of websites.
 *   **[DNSRecon](https://github.com/darkoperator/dnsrecon)** - A powerful DNS enumeration tool for security auditing, domain discovery, and zone transfers.
+*   **[Web-Check](https://github.com/lissy93/web-check)** - An all-in-one OSINT tool for checking website security headers, SSL certificates, DNS records, and server configurations.
+*   **[DNSTwist](https://github.com/elceef/dnstwist)** - Domain name permutation engine for detecting homograph phishing attacks, typo-squatting, and corporate brand abuse.
 
 ---
 
@@ -108,6 +110,8 @@ Once targets are identified, these tools scan for open ports, misconfigurations,
 *   **[Nikto](https://github.com/sullo/nikto)** - An open-source web server scanner that performs rapid tests against servers for multiple items, including over 6700 potentially dangerous files/programs.
 *   **[Nuclei](https://github.com/projectdiscovery/nuclei)** - Fast and customizable vulnerability scanner based on simple YAML-based templates. Very popular in modern bug hunting.
 *   **[Masscan](https://github.com/robertdavidgraham/masscan)** - An ultra-fast TCP port scanner; transmits packets asynchronously, capable of scanning the entire internet in under 6 minutes.
+*   **[Semgrep](https://github.com/semgrep/semgrep)** - A fast, open-source static analysis engine (SAST) for finding security vulnerabilities and bugs in code.
+*   **[Xray](https://github.com/chaitin/xray)** - An advanced, highly modular security scanner designed for automated web vulnerability discovery and scanning.
 
 ---
 
@@ -183,6 +187,23 @@ Auditing REST, GraphQL, and SOAP endpoints to detect IDORs, authentication bypas
 ## 8. Exploitation Frameworks
 
 After identifying vulnerabilities, these platforms run payloads and deliver shell access to the target systems.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Hacker as Penetration Tester
+    participant MSF as Metasploit Framework
+    participant Target as Vulnerable Host
+
+    Hacker->>MSF: Configure Exploit & Payload (e.g., reverse_tcp)
+    Hacker->>MSF: Start listener (Multi/Handler)
+    Hacker->>MSF: Run exploit
+    MSF->>Target: Transmit payload triggering vulnerability
+    Note over Target: Exploit executes target shellcode
+    Target->>MSF: Initiate connection back to Attacker IP
+    MSF-->>Hacker: Establish Interactive Meterpreter Session
+```
+
 
 *   **[Metasploit Framework](https://www.metasploit.com/)** - The most widely used penetration testing platform. It contains database tracking, exploit modules, payloads, and post-exploitation scripts.
 *   **[Beef](https://github.com/beefproject/beef)** - (Browser Exploitation Framework) Focuses on client-side attacks against web browsers to run scripts, bypass security controls, and pivot.
@@ -263,6 +284,7 @@ Tools used by defensive security teams (SOC) to detect intrusions, monitor netwo
 *   **[Zeek](https://zeek.org/)** - A powerful network security monitoring framework that interprets network traffic and generates structured transaction logs.
 *   **[Suricata](https://suricata.io/)** - A high-performance Network Threat Detection, IDS, and IPS engine.
 *   **[YARA](https://github.com/VirusTotal/yara)** - A tool aimed at helping malware researchers identify and classify malware samples based on textual or binary patterns.
+*   **[SafeLine](https://github.com/chaitin/SafeLine)** - A high-performance Web Application Firewall (WAF) serving as a reverse proxy to protect web applications from exploits.
 
 ---
 

