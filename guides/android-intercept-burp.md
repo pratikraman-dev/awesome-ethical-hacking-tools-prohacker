@@ -4,6 +4,31 @@ A step-by-step tutorial on setting up a proxy, installing a custom CA certificat
 
 ---
 
+## Interception Flow Overview
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Attester as Penetration Tester
+    participant App as Android Application
+    participant Frida as Frida Hook (SSL Bypass)
+    participant Burp as Burp Suite Proxy
+    participant Server as Target API Server
+
+    Attester->>App: Launch App & Trigger Request
+    App->>Frida: Validate SSL Pinning
+    Note over Frida: Pinning check intercepted! <br> Returns "TRUSTED"
+    Frida-->>App: Trust Bypassed
+    App->>Burp: Send HTTPS API Request (via Proxy)
+    Note over Burp: Request Intercepted & Analyzed
+    Burp->>Server: Forward Request to API
+    Server-->>Burp: Send API Response
+    Burp-->>App: Forward Response to Device
+```
+
+---
+
+
 ## Prerequisites
 
 Before starting, ensure you have the following installed and configured:

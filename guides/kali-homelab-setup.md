@@ -4,6 +4,30 @@ Learn how to configure a safe, isolated, and virtualized hacking environment usi
 
 ---
 
+## Lab Network Topology
+
+```mermaid
+graph TD
+    subgraph Host Machine (Physical Computer)
+        HostOS["Physical Host Operating System"]
+        Hypervisor["Hypervisor (VirtualBox / VMware Switch)"]
+        
+        subgraph Isolated Virtual NAT Network (10.0.2.0/24)
+            Kali["Kali Linux (Attacker VM) <br> IP: 10.0.2.4"]
+            Metasploit["Metasploitable 2 (Target VM) <br> IP: 10.0.2.5"]
+            JuiceShop["Docker: OWASP Juice Shop <br> Port: 3000"]
+        end
+    end
+
+    Kali -->|Network Scan & Exploit| Metasploit
+    Kali -->|HTTP Web Hacking| JuiceShop
+    Hypervisor --- HostOS
+    Hypervisor === Isolated Virtual NAT Network
+```
+
+---
+
+
 ## Why Set Up a Virtual Lab?
 
 > [!IMPORTANT]
