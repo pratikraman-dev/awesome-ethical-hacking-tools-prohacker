@@ -125,6 +125,7 @@ Hacking is a practical skill. You must get your hands dirty in legal wargames an
 *   **[CTFtime](https://ctftime.org/)** - *Capture The Flag Tracker.* The main directory for tracking global competitive hacking (CTF) events.
 *   **[PentesterLab](https://pentesterlab.com/)** - High quality, structured hands-on exercises covering web application vulnerabilities from basic to advanced.
 *   **[CMD Challenge](https://cmdchallenge.com/)** - A simple and fun interactive command-line wargame to practice and test your Bash skills.
+*   **[Local Hacking Lab Setup Guide](guides/kali-homelab-setup.md)** - Our custom guide to installing VirtualBox, importing Kali Linux and Metasploitable targets, and configuring isolated virtual networks.
 
 ---
 
@@ -136,6 +137,7 @@ Learning methodologies and tutorials to deconstruct, modify, and audit mobile ap
 *   **[HackTricks - Mobile Pentesting](https://book.hacktricks.xyz/mobile-pentesting/android-app-pentesting)** - Highly detailed, community-driven collection of techniques for Android and iOS exploitation.
 *   **[Frida Bootstrapping & Hooking Tutorials](https://learnfrida.info/)** - Learn how to write custom JavaScript scripts to override binary checks at runtime.
 *   **[Baeldung - Reverse Engineering Android Apps](https://www.baeldung.com/)** - Step-by-step developer guides on decompiling DEX files and rewriting APK classes.
+*   **[Local Android Traffic Interception Guide](guides/android-intercept-burp.md)** - Our custom, step-by-step tutorial on routing mobile traffic through Burp Suite, installing a system-level CA cert, and bypassing SSL pinning with Frida.
 
 ---
 
