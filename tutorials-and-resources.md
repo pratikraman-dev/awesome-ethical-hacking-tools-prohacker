@@ -221,6 +221,10 @@ Quick reference guides for commands and syntax during assessments.
 *   **[Local Nmap Scanning Cheat Sheet](cheatsheets/nmap-scanning.md)** - Our custom, copy-pasteable reference for target specification, port scans, OS/service detection, and output logging.
 *   **[Local Privilege Escalation Cheat Sheet](cheatsheets/privilege-escalation.md)** - Essential enumeration command lines and exploit pathways for Linux SUID/Sudo and Windows Service paths.
 *   **[Local Active Directory Hacking Cheat Sheet](cheatsheets/active-directory.md)** - Commands for domain query, PowerView syntax, Kerberoasting (Rubeus/Impacket), and lateral movement.
+*   **[Local SQL Injection Cheat Sheet](cheatsheets/sql-injection.md)** - Authentication bypass payloads, UNION queries, database fingerprinting, and blind SQLi checks.
+*   **[Local Reverse Shells Cheat Sheet](cheatsheets/reverse-shells.md)** - Copy-pasteable connection one-liners for multiple languages (Bash, Python, PHP, PowerShell) and SSL/TLS setups.
+*   **[Local Docker Escape Cheat Sheet](cheatsheets/docker-security.md)** - Container breakout vulnerabilities, docker socket mounting abuses, privileged mode cgroup release agents, and host privilege escalations.
+
 *   **[PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)** - An enormous repository of payloads and bypasses for Web Application Security.
 *   **[GTFOBins](https://gtfobins.github.io/)** - A curated list of Unix binaries that can be exploited to bypass local security restrictions and escalate privileges.
 *   **[LOLBAS](https://lolbas-project.github.io/)** - (Living Off The Land Binaries and Scripts) The Windows equivalent of GTFOBins for privilege escalation and evasion.

