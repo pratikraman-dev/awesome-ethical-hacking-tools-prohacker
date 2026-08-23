@@ -64,6 +64,32 @@ A curated, comprehensive directory of awesome tools for ethical hacking, penetra
 > 
 > 🛡️ **Rules of Engagement:** Before utilizing these tools, make sure you read and comply with our **[Security & Ethical Hacking Guidelines](SECURITY_GUIDELINES.md)**.
 
+---
+
+## Repository Directory Map
+
+```mermaid
+graph TD
+    Main["awesome-ethical-hacking-tools-prohacker (Main Repo)"]
+    Main --> Tools["README.md (Hacking Tools Directory)"]
+    Main --> Tutorials["tutorials-and-resources.md (Educational Roadmap)"]
+    Main --> Security["SECURITY_GUIDELINES.md (Rules of Engagement)"]
+    
+    Tools --> Cheatsheets["/cheatsheets/ (Local Command Indexes)"]
+    Tutorials --> Guides["/guides/ (Local Practical Tutorials)"]
+    
+    Cheatsheets --> Nmap["nmap-scanning.md"]
+    Cheatsheets --> PrivEsc["privilege-escalation.md"]
+    Cheatsheets --> AD["active-directory.md"]
+    Cheatsheets --> SQLi["sql-injection.md"]
+    Cheatsheets --> Shells["reverse-shells.md"]
+    Cheatsheets --> Docker["docker-security.md"]
+    
+    Guides --> Intercept["android-intercept-burp.md"]
+    Guides --> Homelab["kali-homelab-setup.md"]
+    Guides --> KaliMastery["kali-linux-mastery.md"]
+    Guides --> AISec["ai-cybersecurity-path.md"]
+```
 
 ---
 
@@ -95,6 +121,14 @@ A curated, comprehensive directory of awesome tools for ethical hacking, penetra
 Reconnaissance is the most critical phase of penetration testing. These tools help collect public records, active domains, open directories, and target profiles.
 
 *   **[nmap](https://nmap.org/)** - The industry standard for network discovery and vulnerability scanning.
+    <details>
+    <summary>💡 Quick-Start Usage</summary>
+
+    ```bash
+    # Scan target.com for open ports, determine service versions, and run default scripts
+    nmap -sV -sC -T4 target.com
+    ```
+    </details>
 *   **[theHarvester](https://github.com/laramies/theHarvester)** - Gather emails, subdomains, hosts, employee names, open ports, and banners from public sources (Google, Bing, LinkedIn, etc.).
 *   **[Shodan](https://www.shodan.io/)** - A search engine for internet-connected devices. Useful for locating exposed databases, routers, and IoT hardware.
 *   **[Maltego](https://www.maltego.com/)** - An interactive data mining tool that visualizes links between domains, IP addresses, companies, and individuals.
@@ -115,6 +149,14 @@ Once targets are identified, these tools scan for open ports, misconfigurations,
 *   **[OpenVAS / Greenbone](https://www.openvas.org/)** - A full-featured, open-source vulnerability scanner with daily feed updates.
 *   **[Nikto](https://github.com/sullo/nikto)** - An open-source web server scanner that performs rapid tests against servers for multiple items, including over 6700 potentially dangerous files/programs.
 *   **[Nuclei](https://github.com/projectdiscovery/nuclei)** - Fast and customizable vulnerability scanner based on simple YAML-based templates. Very popular in modern bug hunting.
+    <details>
+    <summary>💡 Quick-Start Usage</summary>
+
+    ```bash
+    # Scan target.com for critical vulnerabilities using community-curated templates
+    nuclei -u https://target.com -severity critical,high
+    ```
+    </details>
 *   **[Masscan](https://github.com/robertdavidgraham/masscan)** - An ultra-fast TCP port scanner; transmits packets asynchronously, capable of scanning the entire internet in under 6 minutes.
 *   **[Semgrep](https://github.com/semgrep/semgrep)** - A fast, open-source static analysis engine (SAST) for finding security vulnerabilities and bugs in code.
 *   **[Xray](https://github.com/chaitin/xray)** - An advanced, highly modular security scanner designed for automated web vulnerability discovery and scanning.
@@ -135,6 +177,14 @@ graph LR
 *   **[Burp Suite](https://portswigger.net/burp)** - The gold-standard web proxy for intercepting, modifying, and analyzing HTTP traffic between the browser and target server.
 *   **[OWASP ZAP](https://www.zaproxy.org/)** - The most popular open-source alternative to Burp Suite, offering proxying, spidering, and vulnerability scanning.
 *   **[sqlmap](https://sqlmap.org/)** - An open-source tool that automates the process of detecting and exploiting SQL injection flaws and taking over database servers.
+    <details>
+    <summary>💡 Quick-Start Usage</summary>
+
+    ```sql
+    -- Automate testing for SQL Injection on a vulnerable GET parameter
+    sqlmap -u "http://target.com/item.php?id=1" --dbs --batch
+    ```
+    </details>
 *   **[Gobuster](https://github.com/OJ/gobuster)** - A fast directory/file, DNS, and vhost busting tool written in Go.
 *   **[Wfuzz](https://github.com/xmendez/wfuzz)** - Extremely flexible web fuzzer designed for bruteforcing GET/POST parameters, headers, and paths.
 *   **[Arjun](https://github.com/s0md3v/Arjun)** - Find hidden query parameters on HTTP endpoints. Very useful for parameter pollution and discovery.
@@ -147,6 +197,14 @@ graph LR
 Tools used to test, reverse engineer, and audit Android and iOS mobile applications for security weaknesses.
 
 *   **[Frida](https://frida.re/)** - A dynamic instrumentation toolkit that allows you to inject custom scripts into black-box application binaries (bypass SSL pinning, hook functions).
+    <details>
+    <summary>💡 Quick-Start Usage</summary>
+
+    ```bash
+    # Spawn application and inject custom SSL pinning bypass script
+    frida -U -f com.target.app -l bypass-pinning.js --no-pause
+    ```
+    </details>
 *   **[MobSF (Mobile Security Framework)](https://github.com/MobSF/Mobile-Security-Framework-MobSF)** - An automated, all-in-one mobile application (Android/iOS/Windows) pen-testing, malware analysis, and security assessment framework.
 *   **[Jadx](https://github.com/skylot/jadx)** - Command line and GUI tools for producing Java source code from Android Dex and Apk files.
 *   **[Apktool](https://github.com/iBotPeaches/Apktool)** - A tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them.
@@ -161,6 +219,14 @@ Tools heavily relied on by security researchers and bug bounty hunters to perfor
 *   **[Amass](https://github.com/owasp-amass/amass)** - In-depth DNS enumeration, attack surface mapping, and external asset discovery using active/passive techniques.
 *   **[httpx](https://github.com/projectdiscovery/httpx)** - A fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library.
 *   **[ffuf (Fuzz Faster U Fool)](https://github.com/ffuf/ffuf)** - A professional, web-fuzzing tool written in Go, optimized for speed and flexible matching filters.
+    <details>
+    <summary>💡 Quick-Start Usage</summary>
+
+    ```bash
+    # Fuzz directories and files on target.com using a wordlist
+    ffuf -w common.txt -u https://target.com/FUZZ -mc 200,301
+    ```
+    </details>
 *   **[Waybackurls](https://github.com/tomnomnom/waybackurls)** - Fetch URLs that the Wayback Machine, Common Crawl, and VirusTotal have cached for target domains.
 *   **[Naabu](https://github.com/projectdiscovery/naabu)** - A fast port scanner written in Go focused on scanning hosts quickly and reliably.
 *   **[Katana](https://github.com/projectdiscovery/katana)** - Next-generation web crawling and spidering framework to extract URLs, endpoints, and inputs.
@@ -212,6 +278,14 @@ sequenceDiagram
 
 
 *   **[Metasploit Framework](https://www.metasploit.com/)** - The most widely used penetration testing platform. It contains database tracking, exploit modules, payloads, and post-exploitation scripts.
+    <details>
+    <summary>💡 Quick-Start Usage</summary>
+
+    ```bash
+    # Launch interactive console interface
+    msfconsole -q
+    ```
+    </details>
 *   **[Beef](https://github.com/beefproject/beef)** - (Browser Exploitation Framework) Focuses on client-side attacks against web browsers to run scripts, bypass security controls, and pivot.
 *   **[ExploitDB](https://www.exploit-db.com/)** - An archive of public exploits and shellcode for various software versions, managed by Offensive Security.
 
@@ -222,6 +296,15 @@ sequenceDiagram
 After getting inside a machine, these scripts identify configuration issues to elevate low-privilege users to Root or System Administrator.
 
 *   **[Mimikatz](https://github.com/gentilkiwi/mimikatz)** - A powerful Windows post-exploitation tool that extracts plain text passwords, hash dumps, PINs, and Kerberos tickets from memory (LSASS).
+    <details>
+    <summary>💡 Quick-Start Usage</summary>
+
+    ```cmd
+    :: Elevate debug rights and dump local logon passwords
+    privilege::debug
+    sekurlsa::logonpasswords
+    ```
+    </details>
 *   **[PEASS-ng (LinPEAS / WinPEAS)](https://github.com/carlospolop/PEASS-ng)** - Essential scripts for checking privilege escalation paths on Linux and Windows machines.
 *   **[BloodHound](https://github.com/BloodHoundAD/BloodHound)** - A single-page Javascript web application that uses graph theory to reveal hidden and unintended relationships in Active Directory environments.
 *   **[Impacket](https://github.com/fortra/impacket)** - A collection of Python classes for working with network protocols (SMB, MSRPC, LDAP). Essential for lateral movement in Windows networks.
@@ -243,6 +326,14 @@ Auditing wireless security configurations (Wi-Fi, Bluetooth, RFID).
 Tools for bruteforcing logins and cracking password hashes.
 
 *   **[Hashcat](https://hashcat.net/hashcat/)** - The world's fastest CPU/GPU-based password recovery utility. Supports hundreds of hashing algorithms.
+    <details>
+    <summary>💡 Quick-Start Usage</summary>
+
+    ```bash
+    # Crack MD5 hashes (mode 0) using a dictionary attack wordlist
+    hashcat -m 0 hashes.txt wordlist.txt
+    ```
+    </details>
 *   **[John the Ripper](https://www.openwall.com/john/)** - A highly customizable, fast password cracker for Unix, Windows, and macOS, supporting dictionary attacks and rules.
 *   **[Hydra](https://github.com/vanhauser-thc/thc-hydra)** - A very fast network logon cracker which supports numerous protocols including SSH, RDP, FTP, HTTP-POST, and Telnet.
 
