@@ -308,6 +308,7 @@ sequenceDiagram
     ```
     </details>
 *   **[Beef](https://github.com/beefproject/beef)** - (Browser Exploitation Framework) Focuses on client-side attacks against web browsers to run scripts, bypass security controls, and pivot.
+*   **[Darkmoon](https://github.com/ASCIT31/Dark-Moon)** - Open source (GPL-3.0) autonomous AI penetration testing platform; an LLM orchestrates specialist agents and offensive tools over MCP and proves each finding with a real exploit.
 *   **[ExploitDB](https://www.exploit-db.com/)** - An archive of public exploits and shellcode for various software versions, managed by Offensive Security.
 
 ---
